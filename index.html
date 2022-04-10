@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>찬규의 웹사이트</title>
+        <link rel="stylesheet" href="./all.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script type ="text/javascript">
+            
+            function 연산(){
+                let 입력저장1 = document.getElementById("입력값1").value;
+                document.getElementById("입력출력1").innerHTML = 입력저장1 ;
+                let 입력저장2 = document.getElementById("입력값2").value;
+                document.getElementById("입력출력2").innerHTML = 입력저장2 ;
+                let 입력저장3 = Number(입력저장1) + Number(입력저장2)
+                document.getElementById("입력출력3").innerHTML = 입력저장3 ;
+            }
+        </script>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <a class="navbar-brand" href="#">찬규</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">about me</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+            <div class ="container" >
+                <div class="row">
+                    <div class="col-9">
+                        <label for="입력값1">1번입력</label>
+                        <input type="text" name = "입력값1" id = "입력값1" value ="1" onkeyup ="연산()">
+                        <label for="입력값2">2번입력</label>
+                        <input type="text" name = "입력값2" id = "입력값2" value ="2" onkeyup ="연산()">
+    
+                        <h1>첫번째 크기의 헤드라인</h1>
+    
+                         <p>
+                             <span id ="입력출력1"> 1</span >+ <span id="입력출력2">2 </span> = <span id="입력출력3">3 </span>
+                        </p>
+    
+                         <p>그냥 본문의 내용을 쓸때 p 태그를 사용합시다.</p>
+                         <a href="https://naver.com">Go to naver</a>
+    
+                    </div>
+
+                    <div  class="col-3">
+                        <img src="./image/indexmain.jpg" width="600px">
+                    </div>
+                </div>
+               
+            
+            </div>
+               
+                    
+    
+                    
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
